@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+
+}
+
+a {
+    color: #4E14D2;
+}
+
+.container {
+    display: flex;
+    width: 75%;
+    margin: 0 12%;
+    background-color: white;
+    height: 100vh;
+}
+
+.left {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 0 80px;
+}
+
+.left .logo {
+    font-weight: bolder;
+    margin: 40px 0;
+}
+
+.left .header {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0 30px 0;
+}
+
+/* same lable  */
+.left div label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* same inputs  */
+.left div input:not([type="checkbox"]) {
+    height: 40px;
+    padding: 12px 16px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.left .pass-box {
+    position: relative;
+}
+
+.left .pass-box .icon {
+    cursor: pointer;
+    position: absolute;
+    top: 33px;
+    right: 9px;
+}
+
+.left .condition-box {
+    margin-top: 25px;
+}
+
+.left .condition-box input[type="checkbox"] {
+    display: inline;
+    margin-right: 6px;
+}
+
+.left button {
+    background-color: #4E14D2;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    height: 40px;
+    transition: all ease .5s;
+}
+
+.left button:hover {
+    background: #1a0648;
+
+}
+
+.left .toogle-loign-signup {
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* right section  */
+.right {
+    width: 50%;
+    padding: 0 45px;
+    background-color: #4E14D2;
+}
+
+.right .img {
+
+    margin: 80px 0 0 0;
+}
+
+.right .img img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 8px;
+}
+
+.right .text {
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    color: rgb(214, 214, 214);
+}
+
+.right .text h1 {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.right .text p {
+    width: 300px;
+    margin: auto;
+}
+
+@media (max-width: 1000px) {
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .container {
+        height: 100vh;
+
+    }
+
+}
+@media (max-width: 600px){
+    .container {
+        display: flex;
+        width: 100%;
+        margin: 0 0;
+        height: 100vh;
+    }
+} 
